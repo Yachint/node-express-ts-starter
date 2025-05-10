@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "sourceMap": true, // Useful for debugging: allows you to map errors in JS back to TS
+    "noUncheckedIndexedAccess": true, // For safer index signatures
+    "forceConsistentCasingInFileNames": true, // For cross-platform consistency.
+    "incremental": true, // Speeds up compilation by caching build info
+    "resolveJsonModule": true // If you ever need to import JSON files
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

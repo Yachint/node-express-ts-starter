@@ -1,0 +1,23 @@
+{
+  "name": "node-express-ts",
+  "version": "1.0.0",
+  "description": "node-express-ts",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_COMPILE_CACHE=./.node_compile_cache UV_THREADPOOL_SIZE=8 tsx watch --env-file=.env src/index.ts",
+    "prod": "tsc && NODE_COMPILE_CACHE=./.node_compile_cache UV_THREADPOOL_SIZE=8 node --env-file=.env dist/index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.17",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

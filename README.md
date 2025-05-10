@@ -80,7 +80,7 @@ Node.js added native support for loading .env files starting with version 20.6.0
 node --env-file=.env app.js
 ```
 
-### Can we skip dotenv now?
+### Can we skip dotenv package from now on?
 
 - If you need features not yet supported natively (like variable expansion, multiline values, or loading .env files programmatically in older Node.js versions), you may still want to use dotenv
 
